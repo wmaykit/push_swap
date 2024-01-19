@@ -49,7 +49,7 @@ static char			***ft_get_separated_nums(char **i_stack, int i_len)
 	len_nums = i_len - ft_num_arg_options(i_stack);
 	if (len_nums > 0)
 	{
-		if (!(o_nums = (char ***)malloc(sizeof(char**) * len_nums + 1)))
+		if (!(o_nums = (char ***)malloc(sizeof(char**) * (len_nums + 1))))
 			return (NULL);
 		while (index_n < len_nums)
 		{

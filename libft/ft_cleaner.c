@@ -17,7 +17,7 @@ void	ft_cleaner(void **trash, int index)
 	if (trash)
 	{
 		while (index-- != 0)
-			ft_memdel(trash + index);
-		ft_memdel(trash);
+			ft_memdel((void **)&trash[index]);
+		ft_memdel((void **)&trash);
 	}
 }

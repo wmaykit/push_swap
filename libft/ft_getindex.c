@@ -18,7 +18,7 @@ static	int		**fresh_arry(int size)
 	int	i;
 
 	i = 0;
-	if (!(new = (int **)malloc(sizeof(int *) * size + 1)))
+	if (!(new = (int **)malloc(sizeof(int *) * (size + 1))))
 		return (NULL);
 	while (i < size + 1)
 	{
